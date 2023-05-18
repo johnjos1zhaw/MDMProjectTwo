@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering</title>
+    <script>
+        function submitForm() {
+            var question = document.getElementById("question").value;
+            var paragraph = document.getElementById("paragraph").value;
+
+            // Make an AJAX request to the server
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/answer?question=" + question + "&paragraph=" + paragraph, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Update the answer section with the response
+                    document.getElementById("answer").innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Question Answering</h1>
+    <form>
+        <label for="question">Question:</label><br>
+        <input type="text" id="question" name="question"><br><br>
+        <label for="paragraph">Paragraph:</label><br>
+        <textarea id="paragraph" name="paragraph"></textarea><br><br>
+        <input type="button" value="Predict" onclick="submitForm()">
+    </form>
+    <div id="answer"></div>
+</body>
+</html>
