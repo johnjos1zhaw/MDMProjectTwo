@@ -1,7 +1,7 @@
 # MDMProjectTwo
 
 Java-Webanwendung zur Verwendung des Modells "distilbert-base-cased-distilled-squad"
-Diese Java-Webanwendung verwendet das Modell "distilbert-base-cased-distilled-squad" für Frage-Antwort-Aufgaben. Das Modell kann über den folgenden Link bezogen werden: distilbert-base-cased-distilled-squad. Das Modell wurde auf dem Datensatz "SQuAD" trainiert, der unter folgendem Link verfügbar ist: SQuAD.
+Diese Java-Webanwendung verwendet das Modell "distilbert-base-cased-distilled-squad" für Frage-Antwort-Aufgaben. Das Modell kann über den folgenden Link bezogen werden: [distilbert-base-cased-distilled-squad](https://huggingface.co/distilbert-base-cased-distilled-squad). Das Modell wurde auf dem Datensatz "SQuAD" trainiert, der unter folgendem Link verfügbar ist: [SQuAD](https://huggingface.co/datasets/squad).
 
 ## Abhängigkeiten
 Die Abhängigkeiten der Anwendung werden in der pom.xml-Datei verwaltet. Bitte stellen Sie sicher, dass Sie alle erforderlichen Abhängigkeiten heruntergeladen haben, bevor Sie die Anwendung ausführen.
