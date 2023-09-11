@@ -34,3 +34,4 @@ build/
 DistilBertQAModel.java
 QAController.java
 target
+trace_cased_distilbertqa.pt
